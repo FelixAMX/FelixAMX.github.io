@@ -9,15 +9,15 @@
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 body{
-    background-color: #dedede;
+    background-color: #efefef;
     padding: 50px;
     margin: 0px;
 }
 
 .site-header {
-    background-color: black;
+    background-color: #4267b2;
     margin-top: 0px;
-    color: #dedede;
+    color: white;
     font-family: Century Gothic;
     font-style: none;
     margin-bottom: 0px;
@@ -37,18 +37,18 @@ body{
 
 .col_main {
     text-align: center;
-    background-color: black;
+    background-color: #f7f7f7;
     margin-top: 25px;
     margin-bottom: 25px;
     box-shadow: 0 5px 10px #7c7c7c;
-    color: white;
+    color: black;
     float: right;
     width: 78%;
 }
 
 .col_sidebar {
     float: left;
-    background-color: black;
+    background-color: #4267b2;
     margin-top: 25px;
     margin-bottom: 0px;
     box-shadow: 0 5px 10px #7c7c7c;;
@@ -56,13 +56,14 @@ body{
 }
 
 .date_info_sidebar {
-    color: #dedede;
+    color: black;
     font-family: Century Gothic;
     font-size: 30px;
+    color:white;
 }
 
 .h_style {
-    color: #dedede;
+    color: black;
     font-family: Century Gothic;
     font-size: 30px;
     padding: 0px;
@@ -85,4 +86,8 @@ body{
     margin-right: 3%;
     font-family: Century Gothic;
     font-size: 14px;
+}
+
+.center_footer {
+    width: 100%;
 }
