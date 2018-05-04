@@ -9,7 +9,7 @@
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 body{
-    background-color: #f7f7f7;
+    background-color: #dedede;
     padding: 50px;
     margin: 0px;
 }
@@ -17,7 +17,7 @@ body{
 .site-header {
     background-color: black;
     margin-top: 0px;
-    color: white;
+    color: #dedede;
     font-family: Century Gothic;
     font-style: none;
     margin-bottom: 0px;
@@ -56,13 +56,13 @@ body{
 }
 
 .date_info_sidebar {
-    color: white;
+    color: #dedede;
     font-family: Century Gothic;
     font-size: 30px;
 }
 
 .h_style {
-    color: white;
+    color: #dedede;
     font-family: Century Gothic;
     font-size: 30px;
     padding: 0px;
