@@ -1,0 +1,88 @@
+.clearfix:after {
+        visibility: hidden;
+        display: block;
+        content: "";
+        clear: both;
+        height: 0;
+        }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body{
+    background-color: #f7f7f7;
+    padding: 50px;
+    margin: 0px;
+}
+
+.site-header {
+    background-color: black;
+    margin-top: 0px;
+    color: white;
+    font-family: Century Gothic;
+    font-style: none;
+    margin-bottom: 0px;
+}
+
+.top_margin {
+    margin-top: 0px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+}
+
+.blog_style {
+    background-color: black;
+}
+
+.col_main {
+    text-align: center;
+    background-color: black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 10px #7c7c7c;
+    color: white;
+    float: right;
+    width: 78%;
+}
+
+.col_sidebar {
+    float: left;
+    background-color: black;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    box-shadow: 0 5px 10px #7c7c7c;;
+    width: 20%;
+}
+
+.date_info_sidebar {
+    color: white;
+    font-family: Century Gothic;
+    font-size: 30px;
+}
+
+.h_style {
+    color: white;
+    font-family: Century Gothic;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 25px;
+}
+
+.justify {
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-family: Century Gothic;
+    font-size: 14px;
+}
+
+.post_style_date {
+    text-align: right;
+    margin-right: 3%;
+    font-family: Century Gothic;
+    font-size: 14px;
+}
