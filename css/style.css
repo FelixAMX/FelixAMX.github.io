@@ -26,8 +26,8 @@ body{
 .top_margin {
     margin-top: 0px;
     padding: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 25px;
 }
 
@@ -49,7 +49,7 @@ body{
 .col_sidebar {
     float: left;
     background-color: #4267b2;
-    margin-top: 25px;
+    margin-top: 0px;
     margin-bottom: 0px;
     box-shadow: 0 5px 10px #7c7c7c;;
     width: 20%;
@@ -90,4 +90,51 @@ body{
 
 .center_footer {
     width: 100%;
+}
+
+.main-menu {
+    margin: 0;
+    padding: 10px 15px;
+    list-style: none;
+    background-color: #4267b2;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 10px #7c7c7c;
+    float: right;
+    width: 75.5%;
+}
+
+.main-menu li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.main-menu a {
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: Century Gothic;
+    font-size: 14px;
+    background: #2b4b8c;
+}
+
+.menu-hover :hover {
+    color: black;
+    background-color: #f5f5f5;
+}
+
+.wait_style {
+    margin: 0;
+    padding: 10px 15px;
+    list-style: none;
+    background-color: #4267b2;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 10px #7c7c7c;
+    float: right;
+    width: 75.5%;
+    color: white;
+    text-decoration: none;
+    font-family: Century Gothic;
+    font-size: 28px;  
 }
