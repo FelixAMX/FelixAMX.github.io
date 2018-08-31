@@ -42,8 +42,6 @@ body{
     margin-bottom: 25px;
     box-shadow: 0 5px 10px #7c7c7c;
     color: black;
-    float: right;
-    width: 78%;
 }
 
 .col_sidebar {
@@ -72,13 +70,13 @@ body{
 }
 
 .justify {
-    text-align: justify;
+    text-align: center;
     margin-left: 3%;
     margin-right: 3%;
     margin-top: 2%;
     margin-bottom: 4%;
     font-family: Century Gothic;
-    font-size: 14px;
+    font-size: 76px;
 }
 
 .post_style_date {
@@ -100,8 +98,6 @@ body{
     margin-top: 0px;
     margin-bottom: 25px;
     box-shadow: 0 5px 10px #7c7c7c;
-    float: right;
-    width: 75.5%;
 }
 
 .main-menu li {
