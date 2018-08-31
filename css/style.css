@@ -96,7 +96,6 @@ body{
     list-style: none;
     background-color: #4267b2;
     margin-top: 0px;
-    margin-bottom: 25px;
     box-shadow: 0 5px 10px #7c7c7c;
 }
 
@@ -127,7 +126,6 @@ body{
     margin-top: 0px;
     margin-bottom: 25px;
     box-shadow: 0 5px 10px #7c7c7c;
-    float: right;
     width: 75.5%;
     color: white;
     text-decoration: none;
