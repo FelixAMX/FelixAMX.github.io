@@ -1,0 +1,136 @@
+.clearfix:after {
+        visibility: hidden;
+        display: block;
+        content: "";
+        clear: both;
+        height: 0;
+        }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body{
+    background-color: #efefef;
+    padding: 50px;
+    margin: 0px;
+}
+
+.site-header {
+    background-color: #4267b2;
+    margin-top: 0px;
+    color: white;
+    font-family: Century Gothic;
+    font-style: none;
+    margin-bottom: 0px;
+}
+
+.top_margin {
+    margin-top: 0px;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+}
+
+.blog_style {
+    background-color: black;
+}
+
+.col_main {
+    text-align: center;
+    background-color: #f7f7f7;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 10px #7c7c7c;
+    color: black;
+}
+
+.col_sidebar {
+    float: left;
+    background-color: #4267b2;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0 5px 10px #7c7c7c;;
+    width: 20%;
+}
+
+.date_info_sidebar {
+    color: black;
+    font-family: Century Gothic;
+    font-size: 30px;
+    color:white;
+}
+
+.h_style {
+    color: black;
+    font-family: Century Gothic;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 25px;
+}
+
+.justify {
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-family: Century Gothic;
+    font-size: 76px;
+}
+
+.post_style_date {
+    text-align: right;
+    margin-right: 3%;
+    font-family: Century Gothic;
+    font-size: 14px;
+}
+
+.center_footer {
+    width: 100%;
+}
+
+.main-menu {
+    margin: 0;
+    padding: 10px 15px;
+    list-style: none;
+    background-color: #4267b2;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 10px #7c7c7c;
+}
+
+.main-menu li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.main-menu a {
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: Century Gothic;
+    font-size: 14px;
+    background: #2b4b8c;
+}
+
+.menu-hover :hover {
+    color: black;
+    background-color: #f5f5f5;
+}
+
+.wait_style {
+    margin: 0;
+    padding: 10px 15px;
+    list-style: none;
+    background-color: #4267b2;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 10px #7c7c7c;
+    float: right;
+    width: 75.5%;
+    color: white;
+    text-decoration: none;
+    font-family: Century Gothic;
+    font-size: 28px;  
+}
