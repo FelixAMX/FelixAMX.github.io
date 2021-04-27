@@ -1,41 +1,637 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title> Главная </title>
-    <meta charset="UTF-8">
-    <meta name="desription" lang="ru" content="">
-    <meta name="aunthor" content="FelixAMX">
-    <meta name="keywords" content="Арольд Роман, FelixAMX, разработка, Developer, Blog, блог">
-    <meta name="robots" content="all">
-    <link rel="stylesheet" type="text/css" href="normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<title>CSS. Часть №5 (Свойство background)</title>
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width"> 
+	</head>
 
-</head>
-    
-<body>
-    <header id="top_page" class="site-header clearfix" >
-        <h1 align="left" class="top_margin top_margin_left">FelixAMX Dev.</h1>
-    </header>
-    <main class="main_margin">
-        <section>
-            <ul class="main-menu">
-                <h1 class="site-header">Objects for SAMP and MTA</h1>
-                <hr>
-                <li class="menu-hover"><a href="files.html1">Файлы</a></li>
-            </ul>
-        </section>
-        
-        <section class="col_main">
-            <p></p>
-            <h1 class="h_style">Добро пожаловать! Pass</h1>
-            <hr>
-            <p class="justify"></p>
-            <hr>
-            <p class="post_style_date">@310818z</p>
-        </section>
-        
-           
-        
-    </main>
-</body>
+	<body>
+	<div class="page">
+		<header>
+			<a class="logo" href="#">
+				<img src="img/logo.png" alt="">
+				<div class="logo__title">
+					<p>New York Coffee</p>
+				</div>
+				<div class="logo__describ">
+					<p>Антикафе №1</p>
+				</div>
+			</a>
+			<div class="mobile-title"><p>New York Coffee</p></div>
+			<label class="togglebutton" for="toggle">&#9776</label>
+			<input  id="toggle" type="checkbox">
+			<nav>
+				<div class="wrap">
+					<ul class="header__menu"> 
+						<li class="menu__element"><a href="#advantages">Преимущества</a></li>
+						<li class="menu__element"><a href="#rewiews">Отзывы</a></li>
+						<li class="menu__element"><a href="#gallery">Галерея</a></li>
+						<li class="menu__element"><a href="#about">О нас</a></li>
+						<li class="menu__element"><a href="#contacts">Контакты</a></li>
+						<li class="menu__element"><a href="#price"><span class="green-text">Узнать цену</span></a></li>
+						
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="page__content">
+			<div class="block-hello dark-background">
+				<div class="wrap">
+					<div class="hello__content">
+						<div class="text__title">
+							Первая в Уфе тайм-кофейня
+						</div>
+						<div class="text__describ">
+							Лучшее место для работы и времяпрепровождения
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="advantages" class="block-advantages ">
+				<div class="wrap">
+					<div class="advantages__title title">
+						Почему люди выбирают нас?
+					</div>
+					<div class="advantages__content">
+						<div class="advantages__row slider">
+							<div class="advantages__item slider__nohover slider__item">
+								<div class="item__body">
+									<div class="item__content">
+										<div class="item__img">
+											<img src="img/advantages/adv_1.jpg" alt="">
+										</div>
+										<div class="item__title">
+											Барная стойка
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="advantages__item slider__nohover slider__item">
+								<div class="item__body">
+									<div class="item__content">
+										<div class="item__img">
+											<img src="img/advantages/adv_1.jpg" alt="">
+										</div>
+										<div class="item__title">
+											Барная стойка
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="advantages__item slider__nohover slider__item">
+								<div class="item__body">
+									<div class="item__content">
+										<div class="item__img">
+											<img src="img/advantages/adv_1.jpg" alt="">
+										</div>
+										<div class="item__title">
+											Барная стойка
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="advantages__item slider__nohover slider__item">
+								<div class="item__body">
+									<div class="item__content">
+										<div class="item__img">
+											<img src="img/advantages/adv_1.jpg" alt="">
+										</div>
+										<div class="item__title">
+											Барная стойка
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="advantages__item slider__nohover slider__item">
+								<div class="item__body">
+									<div class="item__content">
+										<div class="item__img">
+											<img src="img/advantages/adv_1.jpg" alt="">
+										</div>
+										<div class="item__title">
+											Барная стойка
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="advantages__item slider__nohover slider__item">
+								<div class="item__body">
+									<div class="item__content">
+										<div class="item__img">
+											<img src="img/advantages/adv_1.jpg" alt="">
+										</div>
+										<div class="item__title">
+											Барная стойка
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="rewiews" class="block-reviews dark-background block">
+				<div class="wrap">
+					<div class="reviews__title title">
+						<p>Что говорят о нас посетители?</p>
+					</div>
+					<div class="reviews__row slider">
+						<div class="reviews__item slider__item slider__nohover">
+							<div class="item__body">
+								<div class="item__content">
+									<div class="item__rate">
+										<p>★★★★★</p>
+									</div>
+									<div class="item__text">
+										<p>New York Coffee - одно из лучших антикафе в Уфе. Здесь максимально уютно, здесь есть куча места(даже целая орава школьников, пришедших на фотосессию, не мешает). Но самое главное - это то, что здесь готовят вкуснейший кофе. Это идеальное место для встреч и посиделок, для игр и серьёзных разговоров. Цена за всё это вполне приемлема, что делает это место идеальным по отношению цена/качество. Спасибо за хорошо проведённые вечера, New York Coffee.</p>
+									</div>
+									<div class="item__author">
+										<p>The T</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__item slider__item slider__nohover">
+							<div class="item__body">
+								<div class="item__content">
+									<div class="item__rate">
+										<p>★★★★★</p>
+									</div>
+									<div class="item__text">
+										<p>New York Coffee - одно из лучших антикафе в Уфе. Здесь максимально уютно, здесь есть куча места(даже целая орава школьников, пришедших на фотосессию, не мешает). Но самое главное - это то, что здесь готовят вкуснейший кофе. Это идеальное место для встреч и посиделок, для игр и серьёзных разговоров. Цена за всё это вполне приемлема, что делает это место идеальным по отношению цена/качество. Спасибо за хорошо проведённые вечера, New York Coffee.</p>
+									</div>
+									<div class="item__author">
+										<p>The T</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__item slider__item slider__nohover">
+							<div class="item__body">
+								<div class="item__content">
+									<div class="item__rate">
+										<p>★★★★★</p>
+									</div>
+									<div class="item__text">
+										<p>New York Coffee - одно из лучших антикафе в Уфе. Здесь максимально уютно, здесь есть куча места(даже целая орава школьников, пришедших на фотосессию, не мешает). Но самое главное - это то, что здесь готовят вкуснейший кофе. Это идеальное место для встреч и посиделок, для игр и серьёзных разговоров. Цена за всё это вполне приемлема, что делает это место идеальным по отношению цена/качество. Спасибо за хорошо проведённые вечера, New York Coffee.</p>
+									</div>
+									<div class="item__author">
+										<p>The T</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__aftertext aftertext">
+						<p>Не верите? <a href="https://search.google.com/local/reviews?placeid=ChIJL9cCNYs52UMRPN9vTIAzFuk" class="aftertext-link" target="_blank">Почитайте</a> остальные отзывы! <br>
+							Посещали нас? Напишите <a href="https://search.google.com/local/writereview?placeid=ChIJL9cCNYs52UMRPN9vTIAzFuk" class="aftertext-link" target="_blank">отзыв</a>.</p>
+					</div>
+				</div>
+			</div>
+			<div id="gallery" class="block__gallery block">
+				<div class="wrap">
+					<div class="gallery__title title">
+						<p>Галерея</p>
+					</div>
+					<div class="gallery__row slider">
+						<div class="gallery__item slider__item slider__nohover">
+							<div class="item__body">
+								<div class="item__content">
+									<div class="item__img">
+										<img src="img/advantages/adv_1.jpg" alt="">
+									</div>
+									<div class="item__lining"></div>
+								</div>	
+							</div>
+						</div>
+						<div class="gallery__item slider__item slider__nohover">
+							<div class="item__body">
+								<div class="item__content">
+									<div class="item__img">
+										<img src="img/advantages/adv_1.jpg" alt="">
+									</div>
+									<div class="item__lining"></div>
+								</div>	
+							</div>
+						</div>
+						<div class="gallery__item slider__item slider__nohover">
+							<div class="item__body">
+								<div class="item__content">
+									<div class="item__img">
+										<img src="img/advantages/adv_1.jpg" alt="">
+									</div>
+									<div class="item__lining"></div>
+								</div>	
+							</div>
+						</div>
+						<div class="gallery__item slider__item slider__nohover">
+							<div class="item__body">
+								<div class="item__content">
+									<div class="item__img">
+										<img src="img/advantages/adv_1.jpg" alt="">
+									</div>
+									<div class="item__lining"></div>
+								</div>	
+							</div>
+						</div>
+						<div class="gallery__item slider__item slider__nohover">
+							<div class="item__body">
+								<div class="item__content">
+									<div class="item__img">
+										<img src="img/advantages/adv_1.jpg" alt="">
+									</div>
+									<div class="item__lining"></div>
+								</div>	
+							</div>
+						</div>
+						<div class="gallery__item slider__item slider__nohover">
+							<div class="item__body">
+								<div class="item__content">
+									<div class="item__img">
+										<img src="img/advantages/adv_1.jpg" alt="">
+									</div>
+									<div class="item__lining"></div>
+								</div>	
+							</div>
+						</div>
+						
+						
+						
+					</div>
+					<div class="gallery__aftertext aftertext">
+						<p>Это только малая часть. Хотите <a href="" class="aftertext-link" target="_blank">посмотреть</a> все фото?</p>
+					</div>
+				</div>
+			</div>
+			<div id="about" class="block__about dark-background block">
+				<div class="wrap">
+					<div class="about__title title">
+						<p>О нас</p>
+					</div>
+					<div class="about__text adative-text-wrap">
+						<p>New York Coffee - это современная time-кофейня в лучших традициях Нью-Йорка, в которой Вы можете насладиться свежесваренным ароматным кофе и приятно провести свободное время, в компании друзей и близких. 
+						<br><br> 
+						Просторная зона отдыха, барная стойка, отдельная игровая комната, оснащенная пятью игровыми приставками и настольным футболом, а так же уютный зал с камином, в котором можно коротать долгие вечера, - все это ждет своих гостей. Высокоскоростной интернет и приятная атмосфера делает нашу кофейню не только отличным местом для отдыха, но и для работы. 
+						<br><br> 
+						Никаких счетов, никаких очередей, никаких официантов - <span class="green-text">Вы платите лишь за время, проведённое внутри кофейни. </span> 
+						<br><br>
+						Также у нас:
+						<br><br>
+						-Бесплатный интернет <br>
+						-Увлекательные мастер-классы и встречи с интересными людьми <br>
+						-Книги и журналы <br>
+						-Настольные игры <br>
+						- У нас есть 4 - PS3, 2 - PS4, Xbox 360, XboxOne.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="contacts" class="block-communication block">
+				<div class="wrap">
+					<div class="communication__title title">
+						<p>Где нас найти и как связаться с нами?</p>
+					</div>
+					<div class="communication__map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9216.213459304288!2d55.94383458092044!3d54.726276145416314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe91633804c6fdf3c!2zTmV3IFlvcmsgQ29mZmVlINCw0L3RgtC40LrQsNGE0LU!5e0!3m2!1sru!2sru!4v1619448664811!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+					<div class="communication__row">
+						<div class="communication__item">
+							<div class="item__body">
+								<div class="item__img">
+									<img src="img/ico/icon_3.png" alt="">
+								</div>
+								<div class="item__text">
+									<p>https://vk.com/nycoffee_ufa</p>
+								</div>
+								<div class="item__button button">
+									<a href="https://vk.com/nycoffee_ufa" target="_blank">Посетить паблик</a>
+								</div>
+							</div>
+						</div>
+						<div class="communication__item">
+							<div class="item__body">
+								<div class="item__img">
+									<img src="img/ico/icon_2.png" alt="" >
+								</div>
+								<div class="item__text">
+									<p>Россия, Республика Башкортостан, Уфа, улица Верхнеторговая площадь, 1
+									</p>
+								</div>
+								<div class="item__button button">
+									<a href="https://vk.com/nycoffee_ufa" target="_blank">Проложить маршрут</a>
+								</div>
+							</div>
+						</div>
+						<div class="communication__item">
+							<div class="item__body">
+								<div class="item__img">
+									<img src="img/ico/icon_1.png" alt="">
+								</div>
+								<div class="item__text">
+									<p>8 (937) 840-02-00</p>
+								</div>
+								<div class="item__button button">
+									<a href="tel:+79378400200">Позвонить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="price" class="block-price dark-background block">
+				<div class="wrap">
+					<div class="price__title title">
+						<p>Цены</p>
+					</div>
+					<div class="price__row slider">
+						<div class="price__item slider__item">
+							<a href="#popup-test">
+								<div class="item__body">
+									<div class="item__content">
+										<div class="item__img">
+											<div class="item__hover-text"><p>Подробнее</p></div>
+											<img src="img/price/price_1.jpg" alt="">
+										</div>
+										<div class="item__title">
+											<p>Тариф Антикафе</p>
+										</div>
+										<div class="item__subtitle">
+											<p>Первый час</p>
+										</div>
+										<div class="item__describ">
+											<p>2.5 ₽/ мин</p>
+										</div>
+										<div class="item__subtitle">
+											<p>Первый час</p>
+										</div>
+										<div class="item__describ">
+											<p>2.5 ₽/ мин</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="price__item slider__item">
+							<a href="#popup-test">
+								<div class="item__body">
+									<div class="item__content">
+										<div class="item__img">
+											<div class="item__hover-text"><p>Подробнее</p></div>
+											<img src="img/price/price_1.jpg" alt="">
+										</div>
+										<div class="item__title">
+											<p>Тариф Антикафе</p>
+										</div>
+										<div class="item__subtitle">
+											<p>Первый час</p>
+										</div>
+										<div class="item__describ">
+											<p>2.5 ₽/ мин</p>
+										</div>
+										<div class="item__subtitle">
+											<p>Первый час</p>
+										</div>
+										<div class="item__describ">
+											<p>2.5 ₽/ мин</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="price__item slider__item">
+							<a href="#popup-test">
+								<div class="item__body">
+									<div class="item__content">
+										<div class="item__img">
+											<div class="item__hover-text"><p>Подробнее</p></div>
+											<img src="img/price/price_1.jpg" alt="">
+										</div>
+										<div class="item__title">
+											<p>Тариф Антикафе</p>
+										</div>
+										<div class="item__subtitle">
+											<p>Первый час</p>
+										</div>
+										<div class="item__describ">
+											<p>2.5 ₽/ мин</p>
+										</div>
+										<div class="item__subtitle">
+											<p>Первый час</p>
+										</div>
+										<div class="item__describ">
+											<p>2.5 ₽/ мин</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="price__item slider__item">
+							<a href="#popup-test">
+								<div class="item__body">
+									<div class="item__content">
+										<div class="item__img">
+											<div class="item__hover-text"><p>Подробнее</p></div>
+											<img src="img/price/price_1.jpg" alt="">
+										</div>
+										<div class="item__title">
+											<p>Тариф Антикафе</p>
+										</div>
+										<div class="item__subtitle">
+											<p>Первый час</p>
+										</div>
+										<div class="item__describ">
+											<p>2.5 ₽/ мин</p>
+										</div>
+										<div class="item__subtitle">
+											<p>Первый час</p>
+										</div>
+										<div class="item__describ">
+											<p>2.5 ₽/ мин</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="price__item slider__item">
+							<a href="#popup-test">
+								<div class="item__body">
+									<div class="item__content">
+										<div class="item__img">
+											<div class="item__hover-text"><p>Подробнее</p></div>
+											<img src="img/price/price_1.jpg" alt="">
+										</div>
+										<div class="item__title">
+											<p>Тариф Антикафе</p>
+										</div>
+										<div class="item__subtitle">
+											<p>Первый час</p>
+										</div>
+										<div class="item__describ">
+											<p>2.5 ₽/ мин</p>
+										</div>
+										<div class="item__subtitle">
+											<p>Первый час</p>
+										</div>
+										<div class="item__describ">
+											<p>2.5 ₽/ мин</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="price__item slider__item">
+							<a href="#popup-test">
+								<div class="item__body">
+									<div class="item__content">
+										<div class="item__img">
+											<div class="item__hover-text"><p>Подробнее</p></div>
+											<img src="img/price/price_1.jpg" alt="">
+										</div>
+										<div class="item__title">
+											<p>Тариф Антикафе</p>
+										</div>
+										<div class="item__subtitle">
+											<p>Первый час</p>
+										</div>
+										<div class="item__describ">
+											<p>2.5 ₽/ мин</p>
+										</div>
+										<div class="item__subtitle">
+											<p>Первый час</p>
+										</div>
+										<div class="item__describ">
+											<p>2.5 ₽/ мин</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="dark-background block">
+			<div class="wrap">
+				<div class="footer__content">
+					<div class="footer__row">
+						<div class="footer__item">
+							<div class="item__body">
+								<div class="item__text">
+									<div class="text__container">
+										<p>Антикафе “New York Coffee”</p>
+									</div>
+									<div class="text__container center">
+										<p>Россия, Республика Башкортостан, Уфа, улица Верхнеторговая площадь, 1</p>
+									</div>
+									<div class="text__container last">
+										<p>8 (937) 840-02-00</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__item">
+							<div class="footer__body schedule">
+								<div class="left__text">
+									<p>ПН</p>
+									<p>ВТ</p>
+									<p>СР</p>
+									<p>ЧТ</p>
+									<p>ПТ</p>
+									<p>СБ</p>
+									<p>ВС</p>
+								</div>
+								<div class="right__text">
+									<p>11:00–23:00</p>
+									<p>11:00–23:00</p>
+									<p>11:00–23:00</p>
+									<p>11:00–23:00</p>
+									<p>11:00–06:00</p>
+									<p>11:00–06:00</p>
+									<p>11:00–23:00</p>
+								</div>
+							</div>
+						</div>
+						<div class="footer__item">
+							<div class="footer__body icons">
+								<a href="https://vk.com/away.php?to=https%3A%2F%2Fwww.instagram.com%2Fnycoffee.ufa%2F&cc_key=" target="_blank">
+									<img src="img/footer/icon_instagram.png" alt="">
+								</a> 
+								<a href="https://vk.com/nycoffee_ufa" target="_blank">
+									<img src="img/footer/icon_vk.png" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__copyright">
+						<p>Дизайн и верстка: <a href="https://vk.com/felixamx" target="_blank">FelixAMX</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>	
+
+
+		<div class="popup-window" id="popup-test">
+			<a href="##" class="popup-window__closebg">
+
+			</a>
+			<div class="wrap">
+				<div class="popup-window__body">
+					<div class="popup-window__content">
+						<div class="popup-window__close">
+							<a href="##">&#x2716;</a>
+						</div>
+						<div class="popup-window__row">
+							<div class="popup-window__img">
+								<div class="popup-window__product-img">
+									<img src="img/price/price_1.jpg" alt="">
+								</div>
+							</div>
+							<div class="popup-window__textblock">
+								<div class="popup-window__product-title">
+									<p>Стоп-Чек</p>
+								</div>
+								<div class="popup-window__product-price">
+									<p>350</p>
+								</div>
+								<div class="popup-window__product-desctib">
+									<p>Максимальная сумма, которую Вы заплатите в нашей кофейне - 450 рублей. Всего 450 рублей за целый день отдыха, отличную атмосферу и вкусные напитки. <br><br> А так же: <br> 🎬Кинозал с мягкими креслами. <br>🎳Настольные и видео-игры. <br>☕Вкуснейший кофе, ароматные чаи и горячий какао! <br>🍪Всегда свежие печеньки!</p>
+								</div>
+								<div class="item__button button">
+									<a href="#sendform">Узнать подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>								
+				</div>
+			</div>
+		</div>
+
+
+		<div class="popup-window popup-sendform" id="sendform">
+			<a href="##" class="popup-window__closebg">
+
+			</a>
+			<div class="wrap">
+				<div class="popup-window__body">
+					<div class="popup-window__content">
+						<div class="popup-window__close">
+							<a href="##">&#x2716;</a>
+						</div>
+						<form action="POST">
+							<input class="form__textfield" type="text" name="name" id="form_name" maxlength="100" placeholder="Имя">
+							<input class="form__textfield" type="tel" name="phone" id="form_phone" placeholder="Телефон">
+							<input class="form__textfield" type="email" name="mail" id="form_mail" maxlength="100" placeholder="Адрес электронной почты">
+							<textarea class="form__textfield" type="text" name="text" id="form_text" maxlength="250" placeholder="Я хочу узнать, сможете ли вы мне помочь и сколько это будет стоить. Вот что меня интересует:" cols="50" rows="5"></textarea>
+						</form>
+					</div>								
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
 </html>
