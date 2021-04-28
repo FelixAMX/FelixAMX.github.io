@@ -911,7 +911,8 @@ footer {
     overflow-y: scroll;
     max-width: 900px;
     max-height: 700px;
-    width: 100vw; }
+    width: 100vw;
+    height: 100vh; }
   .popup-window .popup-window__close {
     position: absolute;
     right: 22px;
