@@ -353,11 +353,11 @@ nav {
 .advantages__title {
   position: relative;
   z-index: 2;
-  bottom: 60px;
+  bottom: 1em;
   background: white;
   text-align: center;
   padding: 24px 0px 10px 0px;
-  border-radius: 20px; }
+  border-radius: 20px 20px 0px 0px; }
 
 .advantages__row {
   display: -webkit-box;
@@ -1024,6 +1024,10 @@ footer {
     padding: 4vh 0; }
   .block-advantages {
     padding-bottom: 20px; }
+    .block-advantages .advantages__title {
+      margin-bottom: 70px; }
+      .block-advantages .advantages__title p {
+        padding-top: 20px; }
   .title {
     font-size: 24px;
     padding: 0 20px; }
