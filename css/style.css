@@ -772,7 +772,9 @@ nav {
     width: 100%; }
     .footer__item .text__container .last p {
       position: relative;
-      width: 100%; } }
+      width: 100%; }
+  .footer__row .footer__item .icons {
+    margin-left: 0; } }
 
 @media screen and (min-width: 581px) {
   .text__container .last p {

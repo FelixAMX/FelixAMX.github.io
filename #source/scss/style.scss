@@ -884,6 +884,8 @@ nav{
                 border-right: none;
             }
 
+            
+
             .text__container{
                 text-align: center;
                 width: 100%;
@@ -898,6 +900,14 @@ nav{
                 }
             }
         }  
+
+        .footer__row{
+            .footer__item{
+                .icons{
+                    margin-left: 0;
+                }
+            }
+        }
         
     }
 
