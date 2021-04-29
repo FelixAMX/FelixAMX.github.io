@@ -48,7 +48,8 @@ nav{
     border-bottom: white solid 2px;
     width: 100%;
 
-    transition: 0.5s;
+    transition-duration: 0.5s;
+    transition-property: transform, right;
 }
 
 
@@ -94,7 +95,8 @@ nav{
         color: white;
         text-decoration: none;
 
-        transition: 0.5s;
+        transition-duration: 0.5s;
+        transition-property: color;
 
 
         &:hover{
@@ -364,7 +366,8 @@ nav{
 
         img{
             width: 100%;
-            transition: 0.5s;
+            transition-duration: 0.25s;
+            transition-property: transform, scale;
         }
     
         width: 210px;
@@ -391,7 +394,8 @@ nav{
             }
         }
 
-        transition: 0.25s;
+        transition-duration: 0.25s;
+        transition-property: transform, scale;
     }
     
     .item__content{
@@ -439,7 +443,8 @@ nav{
             transform: scale(1.05);
         }
 
-        transition: 0.25s;
+        transition-duration: 0.25s;
+        transition-property: transform, scale;
     }
 
     .item__content{
@@ -539,7 +544,8 @@ nav{
             height: 100%; 
         }
 
-        transition: 0.5s;
+        transition-duration: 0.5s;
+        transition-property: transform, bottom;
     }
 
     .item__lining{
@@ -827,7 +833,7 @@ nav{
     }
 
     .item__hover-text{
-        transition: 0.5s;
+        transition:  0.5s;
 
         width: 100%;
         height: 100%;
@@ -1098,15 +1104,20 @@ nav{
     &:target{
         opacity: 1;
         visibility: visible;
+        
     }
 
     position: fixed;
     z-index: 20;
 
 
-    transition: 0.25s;
+    transition-duration: 0.25s;
+    transition-property: opacity, visibility;
+
+
     opacity: 0;
     visibility: hidden;
+    display: none;
 
     display: flex;
     align-items: center;
@@ -1135,20 +1146,20 @@ nav{
         width: 100vw;
         height: 100vh;
 
-        overflow:hidden;
+        overflow-y: auto;
 
         margin: 0 auto;
         padding: 10px;
     }
 
     .popup-window__content{
-        overflow-y: scroll;
+        //overflow-y: auto;
 
         max-width: 900px;
-        max-height: 700px;
+        //max-height: 700px;
 
-        width: 100vw;
-        height: 100vh;
+        //width: 100vw;
+        //height: 100vh;
     }
 
     .popup-window__close{
@@ -1281,6 +1292,15 @@ nav{
 
 .adative-text-wrap{
     padding: 0 20px;
+}
+
+@media screen and (max-width: 900px){
+    .popup-window .popup-window__body{
+        max-width: 100vw;
+        max-height: 100vh;
+        width: 100vw;
+        height: 100vh;
+    }
 }
 
 @media screen and (max-width: 701px){
