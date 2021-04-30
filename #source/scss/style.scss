@@ -1,11 +1,15 @@
 @import "nullcss.scss";
 
+html{
+    scroll-behavior: smooth;
+}
+
 .page{
+
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-
     //background: rgb(255, 255, 255);
 
     font-family: Geometria;
