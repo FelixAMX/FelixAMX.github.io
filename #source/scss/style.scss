@@ -10,7 +10,18 @@
 
     font-family: Geometria;
 
-
+    &::before{
+        background: url("../img/bg/bg_1.jpg") no-repeat center;
+        background-size: cover;
+        content: ' ';
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        will-change: transform;
+        z-index: -1;
+    }
 }
 
 .page__content{
@@ -122,6 +133,8 @@ nav{
     left: 14px;
     top: 14px;
 
+    white-space: nowrap;
+
     width: 70%;
 
     font-weight: 700;
@@ -219,18 +232,7 @@ nav{
         z-index: 1;
     }
 
-    &::before{
-            background: url("../img/bg/bg_1.jpg") no-repeat center;
-            background-size: cover;
-            content: ' ';
-            height: 100%;
-            left: 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            will-change: transform;
-            z-index: -1;
-    }
+    
 
 }
 
@@ -349,12 +351,19 @@ nav{
     border-radius: 20px 20px 0px 0px;
 }
 
+@media screen and (min-width: 1000px) {
+    .advantages__row{
+        width: 80%;
+    }
+}
+
+
 .advantages__row{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
-    width: 80%;
+    //width: 80%;
 
     margin: -60px auto 0 auto;
 
@@ -499,8 +508,8 @@ nav{
 
     .gallery__row{
         display: flex;
-        //justify-content: center;
-        //flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: wrap;
 
         max-width: 940px;
 
@@ -754,8 +763,8 @@ nav{
 
     .price__row{
         display: flex;
-        //flex-wrap: wrap;
-        //justify-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
         margin: 0 auto;
         padding-top: 20px;
 
@@ -1153,15 +1162,17 @@ nav{
         height: 100vh;
 
         overflow-y: auto;
+        overflow-x: hidden;
 
         margin: 0 auto;
-        padding: 10px;
+        
     }
 
     .popup-window__content{
         //overflow-y: auto;
 
         max-width: 900px;
+        padding: 10px;
         //max-height: 700px;
 
         //width: 100vw;
@@ -1170,6 +1181,7 @@ nav{
 
     .popup-window__close{
         position: absolute;
+        z-index: 10;
         right: 22px;
         top: 12px;
         font-size: 36px;
@@ -1295,9 +1307,108 @@ nav{
 }
 //sendform конец
 
+//popup-gallery начало
+.popup-gallery{
+
+    .popup-window__close{
+        a{
+            color: white;
+        }
+    }
+
+    .popup-window__body{
+        max-width: 1000px;
+        max-height: 700px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        background: transparent;
+    }
+
+    .popup-window__content{
+        max-width: 1000px;
+        max-height: 700px;
+;
+    }
+
+    .sl-slider-gallery{
+        margin-top: 60px;
+        max-width: 800px;
+        margin: 0 auto;
+
+
+        //background: white;
+        //border: #19AA57 solid 2px;
+
+
+
+        .slide__center{
+
+        }
+    
+    
+        .sl-slider__slide{
+            max-height: 600px;
+            //height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            .slide__img{
+                max-height: 500px;
+                overflow:hidden;
+                //height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                background: white;
+                border-radius: 10px 10px 0 0;
+    
+                img{
+                    max-width: 100%;
+
+                    width: 100%;
+        
+                    margin: 0 auto;
+                }
+            }
+    
+        }
+
+        .slide__textblock{
+            background: white;
+            padding: 10px;
+
+            border-radius: 0 0 10px 10px;
+        }
+    
+    
+    }
+}
+
+
+
+//popup-gallery конец
+
 
 .adative-text-wrap{
     padding: 0 20px;
+}
+
+@media screen and (max-width: 768px){
+    .popup-window .popup-window__body{
+        max-width: 100vw;
+        max-height: 100vh;
+        width: 100vw;
+        height: 100vh;
+
+        border-radius: 0;
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -1308,6 +1419,32 @@ nav{
         height: 100vh;
 
         border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .slider__nohover{
+        &:hover{
+            transform: scale(1);
+        }
+
+        .item__body:hover{
+            transform: scale(1);
+
+            .item__img{
+                transform: scale(1);
+                bottom: 0;
+            }
+
+        }
+
+        .item__content:hover{
+            transform: scale(1);
+        }
+
+
+
+
     }
 }
 
@@ -1346,8 +1483,20 @@ nav{
 
     }
 
+    .text__title{
+        font-size: 36px;
+    }
+
+    .text__describ{
+        font-size: 24px;
+    }
+
     .block{
         padding: 4vh 0;
+    }
+
+    .block-hello{
+        height: 400px;
     }
 
     .block-advantages{
@@ -1376,29 +1525,6 @@ nav{
         margin: 0 auto ;
     }
 
-    .slider__nohover{
-        &:hover{
-            transform: scale(1);
-        }
-
-        .item__body:hover{
-            transform: scale(1);
-
-            .item__img{
-                transform: scale(1);
-                bottom: 0;
-            }
-
-        }
-
-        .item__content:hover{
-            transform: scale(1);
-        }
-
-
-
-
-    }
 
 }
 
@@ -1414,10 +1540,33 @@ nav{
     }    
 
     .slider__item{
-        //margin: 0 25px;
+        .item__body{
+            margin: 0 auto;
+            //width:100vw;
+        }
     }
 
 }
+
+@media screen and (max-width: 680px){
+        .price__item .item__body, .gallery__item, .reviews__item, .advantages__item{
+            margin: 0 auto;
+            width: 100vw;
+
+            .item__body{
+                margin: 0 auto;
+            }
+
+            .item__content{
+                margin: 0 auto;
+            }
+        }
+
+        .gallery__item{
+            margin: 0 0 20px 0;
+        }
+}    
+
 
 @media screen and (min-width: 700px) and (max-width: 1000px){
     .slider__item{
