@@ -1,3 +1,11 @@
+window.onload = function(){
+    if (window.innerWidth >= 1000){
+        $('.sl-slider').slick('unslick');
+        sliderIsLive = false;
+    }
+
+};
+
 $(function(){
     $('.sl-slider').slick({
         arrows:true,
@@ -48,11 +56,13 @@ $(function(){
       });
 });
 
+
 window.addEventListener("resize", function() {
     if (window.innerWidth >= 1000) {
-      $('.sl-slider').slick('unslick');
-      sliderIsLive = false;
+        $('.sl-slider').slick('unslick');
+        sliderIsLive = false;
     }
+    
     if (window.innerWidth < 1000) {
         $('.sl-slider').slick({
         arrows:true,
