@@ -2,7 +2,42 @@ window.onload = function(){
     if (window.innerWidth >= 1000){
         $('.sl-slider').slick('unslick');
         sliderIsLive = false;
+    }else{
+        $('.sl-slider').slick({
+            arrows:true,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            waitForAnimate: true,
+            //fade: true,
+    
+            slidesToShow: 3,
+            slidesToScroll: 1,
+    
+            responsive:[
+                {
+                    /*breakpoint: 10000,
+                    settings:'unslick'*/
+                },{
+                    breakpoint: 1000,
+                    settings:{
+                        slidesToShow: 2,
+                        slidesToScroll: 2                   
+                    }
+                },{
+                    breakpoint: 680,
+                    settings:{
+                        slidesToShow: 1,
+                        slidesToScroll: 1                   
+                    }
+                }
+            ]
+    
+          });
     }
+
 
 };
 
@@ -79,8 +114,8 @@ window.addEventListener("resize", function() {
 
         responsive:[
             {
-                breakpoint: 10000,
-                settings:'unslick'
+                /*breakpoint: 10000,
+                settings:'unslick'*/
             },{
                 breakpoint: 1000,
                 settings:{
