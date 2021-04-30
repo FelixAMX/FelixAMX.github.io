@@ -6,7 +6,7 @@ window.onload = function(){
 
 };
 
-$(function(){
+/*$(function(){
     $('.sl-slider').slick({
         arrows:true,
         dots: true,
@@ -40,7 +40,7 @@ $(function(){
         ]
 
       });
-});
+});*/
 
 $(function(){
     $('.sl-slider-gallery').slick({
@@ -79,6 +79,9 @@ window.addEventListener("resize", function() {
 
         responsive:[
             {
+                breakpoint: 10000,
+                settings:'unslick'
+            },{
                 breakpoint: 1000,
                 settings:{
                     slidesToShow: 2,
