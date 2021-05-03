@@ -1,3 +1,5 @@
+    
+
 window.onload = function(){
     if (window.innerWidth >= 1000){
         $('.sl-slider').slick('unslick');
@@ -36,9 +38,8 @@ window.onload = function(){
             ]
     
           });
+
     }
-
-
 };
 
 /*$(function(){
@@ -78,7 +79,9 @@ window.onload = function(){
 });*/
 
 $(function(){
+
     $('.sl-slider-gallery').slick({
+        lazyLoad: 'ondemand',
         arrows:true,
         dots: true,
         infinite: true,

@@ -1,0 +1,66 @@
+.popup-window-ie {
+  display: none; }
+
+#ie__visibility {
+  display: none; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .popup-window-ie {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: block;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll; }
+    .popup-window-ie img {
+      display: block;
+      position: relative;
+      bottom: 200px;
+      margin: 0 auto;
+      margin-bottom: -162px; }
+    .popup-window-ie .popup-window-ie__body {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 10px; }
+    .popup-window-ie .popup-window-ie__content .popup-window-ie__title {
+      font-weight: 600;
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 1em; }
+    .popup-window-ie .popup-window-ie__content .popup-window-ie__discrib {
+      font-weight: 500;
+      font-size: 18px;
+      max-width: 800px;
+      margin: 1rem auto 0 auto;
+      text-align: justify;
+      line-height: 2rem; }
+      .popup-window-ie .popup-window-ie__content .popup-window-ie__discrib a {
+        text-decoration: underline;
+        color: #20904f; }
+        .popup-window-ie .popup-window-ie__content .popup-window-ie__discrib a:hover {
+          color: #0d361f; }
+    .popup-window-ie .popup-window-ie__content .popup-window-ie__continue {
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 18px;
+      max-width: 800px;
+      margin: 4rem auto 0 auto;
+      color: #20904f;
+      text-align: justify;
+      line-height: 2rem; }
+      .popup-window-ie .popup-window-ie__content .popup-window-ie__continue:hover {
+        text-decoration: underline;
+        color: #0d361f; }
+  #ie__visibility:checked + .popup-window-ie {
+    display: none; } }

@@ -3,17 +3,21 @@
 	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 	<head>
 		<title>New York Coffee антикафе - Первая в Уфе тайм-кофейня</title>
-		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css" />
 		<link rel="stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="css/explorer.css" rel="stylesheet"/>
+
 		
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 		<meta name="viewport" content="width=device-width"> 
+
+		
 	</head>
 
 	<body>
 	<div class="page">
-		<header>
+		<header id="header">
 			<a class="logo" href="#">
 				<img src="img/logo.png" alt="">
 				<div class="logo__title">
@@ -579,14 +583,14 @@
 
 
 		<div class="popup-window" id="popup-test">
-			<a href="##" class="popup-window__closebg">
+			<a href="#header" class="popup-window__closebg">
 
 			</a>
 			<div class="wrap">
 				<div class="popup-window__body">
 					<div class="popup-window__content">
 						<div class="popup-window__close">
-							<a href="##">&#x2716;</a>
+							<a href="#header">&#x2716;</a>
 						</div>
 						<div class="popup-window__row">
 							<div class="popup-window__img">
@@ -616,14 +620,14 @@
 
 
 		<div class="popup-window popup-sendform" id="sendform">
-			<a href="##" class="popup-window__closebg">
+			<a href="#header" class="popup-window__closebg">
 
 			</a>
 			<div class="wrap">
 				<div class="popup-window__body">
 					<div class="popup-window__content">
 						<div class="popup-window__close">
-							<a href="##">&#x2716;</a>
+							<a href="#header">&#x2716;</a>
 						</div>
 						<form action="POST">
 							<input class="form__textfield" type="text" name="name" id="form_name" maxlength="100" placeholder="Имя">
@@ -638,19 +642,19 @@
 
 
 		<div class="popup-window popup-gallery" id="popup-gallery">
-			<a href="##" class="popup-window__closebg">
+			<a href="#header" class="popup-window__closebg">
 	
 			</a>
 			<div class="wrap">
 				<div class="popup-window__body">
 					<div class="popup-window__content">
 						<div class="popup-window__close">
-							<a href="##">&#x2716;</a>
+							<a href="#header">&#x2716;</a>
 						</div>
 						<div class="sl-slider-gallery">
 							<div class="sl-slider__slide">
 								<div class="slide__img">
-									<img src="img/light-man.png" alt="">
+									<img data-lazy="img/light-man.png" alt="">
 								</div>
 								<div class="slide__textblock">
 									<p>Опа!</p>
@@ -658,7 +662,7 @@
 							</div>
 							<div class="sl-slider__slide">
 								<div class="slide__img">
-									<img src="img/bg.jpg" alt="">
+									<img data-lazy="img/bg.jpg" alt="">
 								</div>
 								<div class="slide__textblock">
 									<p>Опа!</p>
@@ -666,7 +670,7 @@
 							</div>
 							<div class="sl-slider__slide">
 								<div class="slide__img">
-									<img src="img/logo.png" alt="">
+									<img data-lazy="img/logo.png"  alt="">
 								</div>
 								<div class="slide__textblock">
 									<p>Опа!</p>
@@ -678,6 +682,25 @@
 					</div>								
 				</div>
 			</div>
+		</div>
+
+		<input type="checkbox" name="" id="ie__visibility">
+		<div class="forIE popup-window-ie">
+			<div class="wrap">
+				<div class="popup-window-ie__body">
+					<div class="popup-window-ie__content">
+						<img src="img/logo.png" alt="">
+
+						
+						<p class="popup-window-ie__title">Упс... Похоже, ваш Internet Explorer устарел.</p>
+						<p class="popup-window-ie__discrib">Вы пользуетесь устаревшим браузером который не поддерживает современные веб-стандарты.</p>
+						<p class="popup-window-ie__discrib"> К сожалению, наш сайт больше не поддерживает браузер Internet Explorer. Ввиду отсутствия своевременной поддержки и трудности адаптации сайта для корректной работы в данном браузере, мы были вынуждены остановить его поддержку.</p>
+						<p class="popup-window-ie__discrib">Рекомендуем воспользоваться: <a href="https://www.google.com/intl/ru_ru/chrome/" target="_blank">Google Chrome</a> <a href="https://www.opera.com/ru" target="_blank">Opera</a> <a href="https://www.mozilla.org/ru/firefox/new/" target="_blank">Firefox</a> <a href="https://www.apple.com/ru/safari/" target="_blank">Safari</a> или любым другим современным браузером.</p>
+						<p class="popup-window-ie__continue"><label for="ie__visibility">Продолжить посещение страницы с возможным некорректным отображением контента.</label></p>
+					</div>
+				</div>
+			</div>
+			
 		</div>
 
 	</div>
