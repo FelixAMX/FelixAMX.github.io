@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal; }
 
 html {
+  font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth; }
 
 .page {
@@ -106,6 +107,7 @@ html {
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: hidden;
+  font-family: Arial, Helvetica, sans-serif;
   font-family: Geometria; }
   .page::before {
     background: url("../img/bg/bg_1.jpg") no-repeat center;
