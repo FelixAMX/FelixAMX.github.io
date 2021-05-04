@@ -1600,3 +1600,33 @@ nav{
         margin: 0 25px;
     }
 }
+
+
+.occurrence{
+    position: relative;
+    animation: occurrence 2s;
+}
+
+@keyframes occurrence{
+    0% {
+        bottom: -10vh;
+        opacity: 0;
+
+    }
+
+    20% {
+        bottom: -10vh;
+        opacity: 0;
+
+    }
+
+    100%{
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+.occurrence_p{
+    overflow: hidden;
+    
+}

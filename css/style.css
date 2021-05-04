@@ -1257,3 +1257,33 @@ footer {
 @media screen and (min-width: 700px) and (max-width: 1000px) {
   .slider__item {
     margin: 0 25px; } }
+
+.occurrence {
+  position: relative;
+  -webkit-animation: occurrence 2s;
+  animation: occurrence 2s; }
+
+@-webkit-keyframes occurrence {
+  0% {
+    bottom: -10vh;
+    opacity: 0; }
+  20% {
+    bottom: -10vh;
+    opacity: 0; }
+  100% {
+    bottom: 0px;
+    opacity: 1; } }
+
+@keyframes occurrence {
+  0% {
+    bottom: -10vh;
+    opacity: 0; }
+  20% {
+    bottom: -10vh;
+    opacity: 0; }
+  100% {
+    bottom: 0px;
+    opacity: 1; } }
+
+.occurrence_p {
+  overflow: hidden; }
